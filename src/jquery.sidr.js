@@ -40,9 +40,6 @@
       if(typeof elementId === 'string' && '' !== elementId) {
         $element.attr('id', elementId.replace(/([A-Za-z0-9_.\-]+)/g, 'sidr-id-$1'));
       }
-      if(typeof elementClass === 'string' && '' !== elementClass && 'sidr-inner' !== elementClass) {
-        $element.attr('class', elementClass.replace(/([A-Za-z0-9_.\-]+)/g, 'sidr-class-$1'));
-      }
       $element.removeAttr('style');
     },
     execute: function(action, name, callback) {
